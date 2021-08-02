@@ -1,0 +1,38 @@
+.inp input{
+    background: none;
+    padding: 5px 8px;
+    border: 1px solid black;
+    margin: 3px;
+    outline: none;
+}
+.inp button{
+    background: none;
+    padding: 5px 8px;
+    border: 1px solid black;
+    margin: 3px;
+    transition: .5s;
+}
+.inp button:hover{
+    color: white;
+    background-color: rgb(97, 210, 255);
+}
+.inp{
+    margin-top: 10px;
+    width: 350px;
+    margin: 0 auto;
+}
+.block{
+    width: 500px;
+    margin: 30px auto;
+}
+.btn{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid black;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: rgb(126, 219, 255);
+    border-color: rgb(126, 219, 255);
+    color: white;
+}

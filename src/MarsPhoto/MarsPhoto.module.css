@@ -1,0 +1,29 @@
+.div{
+    text-align:  center;
+    padding: 30px 0;
+}
+.div h1{
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(52, 171, 250);
+    font-size: 20px;
+    font-weight: 200;
+    background-color: white;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: rgb(52, 171, 250);
+    color: white;
+}
+.btn:hover a{
+    color: white;
+}

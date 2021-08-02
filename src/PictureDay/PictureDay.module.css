@@ -1,0 +1,44 @@
+.div{
+    text-align: center;
+}
+.media{
+    width: 65%;
+}
+.mediavidio{
+    width: 65%;
+    height: 400px;
+}
+.div{
+    width: 80%;
+    margin:  0 auto;
+}
+.div h1{
+    font-weight: 400;
+}
+.div h2{
+    font-weight: 400;
+}
+@media screen and (max-width: 1015px) {
+    .mediavidio{
+        width: 70%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .mediavidio{
+        width: 70%;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .mediavidio{
+        width: 70%;
+
+    }
+}
+@media screen and (max-width: 460px) {
+    .mediavidio{
+        width: 70%;
+        height: 150px;
+    }
+}

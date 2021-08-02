@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './header/Header'
+import MarsPhoto from './MarsPhoto/MarsPhoto'
+import PictureDay from './PictureDay/PictureDay'
+import {Route, Switch,Redirect} from 'react-router-dom'
+import MarsPhotoPage from './MarsPhoto/MarsPhotoPage'
+import AsteroidsNeoWs from './AsteroidsNeoWs/AsteroidsNeoWs'
+import AsteroidsNeoWsPage from './AsteroidsNeoWs/AsteroidsNeoWsPage'
+const App=()=>{
+    return(
+        <Switch>
+            <Route path='/' exact>  
+                    <Header />
+                    <PictureDay />
+                    <MarsPhoto />
+                    <AsteroidsNeoWs />
+            </Route>
+            <Route path='/MarsPhotos'>
+                <MarsPhotoPage />
+            </Route>
+            <Route path='/AsteroidsNeoWsPage'>
+                <AsteroidsNeoWsPage />
+            </Route>
+            <Redirect to='/' />
+        </Switch>
+    )
 }
-
-export default App;
+export default App

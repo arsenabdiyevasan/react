@@ -1,0 +1,29 @@
+.block{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+.block img{
+    width: 100%;
+}
+.block button a{
+    text-decoration: none;
+    color: black;
+}
+.block button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(52, 171, 250);
+    font-size: 20px;
+    font-weight: 200;
+    background-color: white;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.block button:hover{
+    background-color: rgb(52, 171, 250);
+    color: white;
+}
+.block button:hover a{
+    color: white;
+}
