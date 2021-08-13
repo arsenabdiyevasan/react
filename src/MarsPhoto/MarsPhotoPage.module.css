@@ -1,4 +1,3 @@
-
 .info{
     padding: 5px 20px;
 }
@@ -25,11 +24,12 @@
     border-color: rgb(76, 190, 243);
     
 }
-.inpBox{
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
+.btncolor{
+    background-color: rgb(76, 190, 243);
+    border-color: rgb(76, 190, 243);
+    color: white;
 }
+
 .inp{
     padding: 5px 7px;
     background: none;
@@ -82,4 +82,57 @@
     border: none;
     margin: 0;
     margin-top: 3px;
+}
+.imgBlock{
+    position: fixed;
+    top: 0;
+    left: -200%;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+.blockimg{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+}
+.blockimg img{
+    width: 100%;
+}
+.tf{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.block{
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .blockimg{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .blockimg{
+        width: 90%;
+    }
+}
+.info h1{
+    font-weight: 300;
+}
+.info{
+    text-align: center;
+}
+
+.inpBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.rovers{
+    display: flex;
+    justify-content: center;
 }
