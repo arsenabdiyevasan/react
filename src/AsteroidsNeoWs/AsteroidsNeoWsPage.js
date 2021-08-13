@@ -12,9 +12,10 @@ const AsteroidsNeoWsPage=()=>{
     const [page1,setPage1]=useState(10)
     const [pages,setPages]=useState(1)
     const getAsteroids=(st,en)=>{
-        asteroids.get(st,en)
+        asteroids.get(st,en)    
         .then(res => res.json())
         .then(res => setArr(res))
+        
     }
     const getSelf=(link)=>{
         setArr([])

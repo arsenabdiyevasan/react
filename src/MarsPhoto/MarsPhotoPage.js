@@ -47,7 +47,7 @@ const MarsPhotoPage=()=>{
             })
     }
     const inputget=()=>{
-        roverInfo.photos.find(item => {
+        roverInfo.photos.forEach(item => {
             if(item.earth_date === input){
                 setDate(item)
                 setImg([])
@@ -61,12 +61,14 @@ const MarsPhotoPage=()=>{
         })
     }
     useEffect(()=>{
+            // other code
         MP.rovers()
         .then(res =>res.json())
         .then(res =>{
             setArr(res.rovers)
             manifestsRover(res.rovers[0].name)
         })
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return(
         <div className={css.block}>
